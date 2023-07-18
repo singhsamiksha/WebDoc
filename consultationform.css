@@ -1,0 +1,100 @@
+*{
+ font-family: Roboto;
+}
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+header {
+    font-size: 2rem;
+    padding-left: 2%;
+
+}
+
+.formSection {
+    padding: 1% 2%;
+
+}
+
+.namebox{
+    width: 120%;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    height: 25px;
+}
+
+.inputfield{
+    margin-right: 10%;
+    width:20%;
+
+}
+
+.inputfield > p{
+    margin: 3%;
+    font-size: 0.8rem;
+    font-display: #aaa;
+}
+
+.name{
+    display: flex;
+
+    
+}
+
+.ageAndDOB{
+    margin: 0;
+    display: flex;
+}
+
+.GenderAndnumber{
+    display:flex;
+}
+.age{
+    margin-right: 5.3%;
+}
+
+.ageAndDOBbox{
+    width: 300px;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    height: 25px;
+}
+
+.ageAndDOBbox > p{
+    margin: 3%;
+    font-size: 0.8rem;
+    font-display: #aaa;
+}
+
+.submitSection {
+    background-color: #973397;
+}
+
+/* Styling for the label */
+label.Gender {
+    font-weight: bold;
+  }
+  
+  select.gender-select {
+    width: 2000px; /* Adjust the width as desired */
+    height: 30px; /* Adjust the height as desired */
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Styling for the number input */
+  input.number-input {
+    width: 2000px; /* Adjust the width as desired */
+    height: 30px; /* Adjust the height as desired */
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .gender{
+    margin-right: 220px;
+  }

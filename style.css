@@ -1,0 +1,302 @@
+*{
+    font-family: Roboto;
+}
+body,html{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    background-color: rgb(104, 152, 254);
+    padding:6px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 45px;
+    margin-bottom: 10px;
+}
+/*input{
+    float:left;
+    border:none;
+    width:300px;
+    height:30px;
+    border-radius: 20px;
+}  */ 
+
+.searchbar {
+display: flex;
+align-items:center;
+margin-left: 10px;
+padding-left:60px;
+height: 8px;
+width:300;
+padding: 10px;
+background-color: #ffffff;
+border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.285);
+
+}
+
+.searchbar ion-icon {
+margin-right: 10px;
+font-size: 17px;
+
+}
+
+.searchbar input[type="text"] {
+border: none;
+background-color: transparent;
+outline: none;
+font-size: 16px;
+width: 200px;
+}
+
+/* Styles for the icon div */
+.icon {
+    display:flex;
+    align-items: center;
+    
+}
+
+.icon ion-icon {
+font-size: 24px;
+margin-right: 20px;
+}
+
+.icon a {
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+
+.slideshow-container {
+    margin-bottom: 20px;
+    display: flex;
+    background-color: rgba(218, 229, 254, 0.591);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.532);
+    
+}
+
+.content{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.consultantbutton{
+        background-color: rgb(104, 152, 254);
+        width: 250px;
+        height:60px;
+        border: none;
+        color: white;
+        border-radius: 40px;
+        margin-top: 20px;
+        font-size: medium;
+        
+    }
+
+.consultantbutton:hover{
+        background-color: rgb(92, 180, 113);
+}
+
+.slideshow-container2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: rgba(244, 254, 218, 0.591);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.532);
+}
+
+.content2{
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.consultantbutton2{
+        background-color: rgb(254, 244, 104);
+        width: 180px;
+        height:60px;
+        border: none;
+        color: white;
+        border-radius: 40px;
+        margin-top: 20px;
+        font-size: medium;
+        
+    }
+
+.consultantbutton2:hover{
+        background-color: rgb(92, 180, 113);
+}
+
+.slideshow-container3 {
+    padding-top: 20px;
+    padding-left: 1px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: rgba(254, 218, 231, 0.591);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.532);
+}
+
+.content3{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.consultantbutton3{
+        background-color: rgb(254, 104, 169);
+        width: 260px;
+        height:60px;
+        border: none;
+        color: white;
+        border-radius: 40px;
+        margin-top: 20px;
+        font-size: medium;
+        
+    }
+
+.consultantbutton3:hover{
+        background-color: rgb(92, 180, 113);
+}
+
+.slideshow-container4 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: rgba(254, 240, 218, 0.591);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.532);
+}
+
+.content4{
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.consultantbutton4{
+        background-color: rgb(254, 196, 104);
+        width: 320px;
+        height:60px;
+        border: none;
+        color: white;
+        border-radius: 40px;
+        margin-top: 20px;
+        font-size: medium;
+        
+    }
+
+.consultantbutton4:hover{
+        background-color: rgb(92, 180, 113);
+}
+
+.slideshow-container5 {
+    padding-top: 20px;
+    padding-left: 1px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: rgba(243, 218, 254, 0.591);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.532);
+}
+
+.content5{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.consultantbutton5{
+        background-color: rgb(194, 104, 254);
+        width: 350px;
+        height:60px;
+        border: none;
+        color: white;
+        border-radius: 40px;
+        margin-top: 20px;
+        font-size: medium;
+        
+    }
+
+.consultantbutton5:hover{
+        background-color: rgb(92, 180, 113);
+}
+
+.slideshow-container6 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: rgba(218, 254, 245, 0.591);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.532);
+}
+
+.content6{
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.consultantbutton6{
+        background-color: rgb(104, 254, 221);
+        width: 320px;
+        height:60px;
+        border: none;
+        color: white;
+        border-radius: 40px;
+        margin-top: 20px;
+        font-size: medium;
+        
+    }
+
+.consultantbutton6:hover{
+        background-color: rgb(92, 180, 113);
+}
+
+.slideshow-container7 {
+    padding-top: 20px;
+    padding-left: 1px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: rgba(254, 218, 222, 0.591);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.532);
+}
+
+.content7{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.consultantbutton7{
+        background-color: rgb(254, 104, 139);
+        width: 200px;
+        height:60px;
+        border: none;
+        color: white;
+        border-radius: 40px;
+        margin-top: 20px;
+        font-size: medium;
+        
+    }
+
+.consultantbutton7:hover{
+        background-color: rgb(92, 180, 113);
+}
+.footer{
+    background-color: rgb(104, 152, 254);
+    height: 20px;
+}
