@@ -1,100 +1,200 @@
 *{
  font-family: Roboto;
+
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
 }
 
 body {
-    margin: 0;
-    background-color: aliceblue;
+    margin: 50px;
+    background-color: rgb(151, 184, 254);
+    width: 50%;
+    align-content: center;
 }
 
 header {
-    font-size: 2rem;
-    padding-left: 2%;
+    font-size: 1.5rem;
+    text-align: center;
+    font-display: rgb(104, 152, 254);
 
 }
 
-.formSection {
-    padding: 1% 2%;
 
+.contentbox {
+    padding: 40px;
+    width: 1120px;
+    height: 1050px;
+    background-color: rgb(228, 242, 252);
+    border-radius: 20px;
+    border-style: none;
+    margin-bottom: 40px;
 }
+
 
 .namebox{
-    width: 120%;
+    width: 230%;
     border: 1px solid #aaa;
     border-radius: 20px;
-    height: 25px;
+    height: 35px;
+    padding: 2px;
+    padding-left: 10px;
 }
 
 .inputfield{
-    margin-right: 10%;
+    margin-right: 30%;
     width:20%;
 
 }
 
 .inputfield > p{
     margin: 3%;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     font-display: #aaa;
+    font-weight: 400;
 }
 
 .name{
     display: flex;
-
-    
 }
 
 .ageAndDOB{
-    margin: 0;
     display: flex;
 }
 
-.GenderAndnumber{
-    display:flex;
-}
+
 .age{
-    margin-right: 5.3%;
+    margin-right: 36%;
 }
 
 .ageAndDOBbox{
-    width: 300px;
+    width: 1550%;
     border: 1px solid #aaa;
     border-radius: 20px;
-    height: 25px;
+    height: 35px;
+    padding: 2px;
+    padding-left: 10px;
 }
 
-.ageAndDOBbox > p{
+.inputfield2{
+    margin-right: 300%;
+    width:20%;
+
+}
+
+.inputfield2 > p{
     margin: 3%;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     font-display: #aaa;
+    font-weight: 400;
 }
 
-.submitSection {
-    background-color: #973397;
+.date::placeholder{
+    color: #999;
 }
 
-/* Styling for the label */
-label.Gender {
-    font-weight: bold;
+.GenderAndnumber {
+    display: flex;
+    
+}
+
+/* CSS to style the "gender" section */
+.gender {
+    margin-right: 50px;
+}
+
+
+
+/* CSS to style the "select" element */
+select[name="gender"] {
+    padding-right: 380px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size:small;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    font-display: rgb(240, 240, 240);
+    font-weight: 120px;
+    padding-left: 10px;
+    color: #999;
+
+}
+
+/* CSS to style the "input" field for phone number */
+input[name="phone"] {
+    padding-right: 340px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.numberinput::placeholder{
+    color: #999;
+    font-size: small;
+    padding: 10px;
+} 
+
+p{
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.healthHistory {
+    margin-bottom: 20px;
   }
   
-  select.gender-select {
-    width: 2000px; /* Adjust the width as desired */
-    height: 30px; /* Adjust the height as desired */
-    padding: 5px;
+  /* Style for the condition labels and checkboxes */
+  .container {
+    margin-bottom: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-right: 50px;
   }
   
-  /* Styling for the number input */
-  input.number-input {
-    width: 2000px; /* Adjust the width as desired */
-    height: 30px; /* Adjust the height as desired */
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  /* Style the custom checkmark when the checkbox is checked */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3; /* Use a different color for checked checkbox */
   }
-  .gender{
-    margin-right: 220px;
+
+
+  .write{
+    margin-top: 20px;
+    padding: 0%;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid #aaa;
   }
+
+  .write::placeholder {
+    color: #999;
+    padding-left: 10px;
+
+}
+
+button{
+    background-color: rgb(104, 152, 254);
+    width: 150px;
+    height:60px;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    margin-top: 40px;
+    text-align: center;
+    align-content: center;
+    margin-left: 45%;
+    font-size: medium;
+    
+}
+
+button:hover{
+    background-color: rgb(92, 180, 113);
+}
+  
+
+  
