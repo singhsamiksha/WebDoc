@@ -8,145 +8,121 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <script src="app.js"></script>
 </head>
 
 <body>
-    <div class ="contentbox">
-    <header>
-        <h2>Patient's Information</h2>
-    </header>
-    <div class="formSection">
-        <p>Name</p>
-        <div class="name">
-            <div class="inputfield">
-                <input class="namebox" type="text">
-                <p>First Name</p>
-            </div>
-            <div class="inputfield">
-                <input class="namebox" type="text">
-                <p>Last Name</p>
-            </div>
-        </div>
+    <form id ="consultationform" onsubmit=submitConsultation()>
+    <div class="bodyContainer">
 
-        <div class="ageAndDOB">
-            <div class="age">
-                <p>Age</p>
-                <div class="inputfield2">
-                    <input class="ageAndDOBbox" placeholder="e.g., 23">
+        <div class="contentbox">
+            <header>
+                <h2>Patient's Information</h2>
+            </header>
+            <div class="inputRow">
+                <div class="inputSection">
+                    <p>Name</p>
+                    <input type="text" name="first_name" id="first_name" autocomplete="given-name" required>
+                    <p class="inputHelperText">First Name</p>
+                </div>
+                <div class="inputSection">
+                    <p> &nbsp; </p>
+                    <input type="text" name="last_name" id="last_name" autocomplete="family-name" required>
+                    <p class="inputHelperText">Last Name</p>
                 </div>
             </div>
-            <div class="DOB">
-                <p>Date Of Birth</p>
-                <div class="inputfield2">
-                    <input type= "date" class="ageAndDOBbox" placeholder="DD-MM-YYYY" width="2000%">
+
+            <div class="inputRow">
+                <div class="inputSection">
+                    <p>Age</p>
+                    <input type="number"  name="age" id="age" placeholder="e.g., 23" autocomplete="age" required>
+                </div>
+                <div class="inputSection">
+                    <p>Date Of Birth</p>
+                    <input type="date" name="DOB" id="DOB"  placeholder="DD-MM-YYYY" autocomplete="bday" required>
                 </div>
             </div>
-        </div>
 
-        <div class="GenderAndnumber">
-            <div class="gender">
-                <p>Gender</p>
-                <label class="Gender"></label>
-                    <select name="gender">
+            <div class="inputRow">
+                <div class="inputSection">
+                    <p>Gender</p>
+                    <select name="gender" id="gender" autocomplete="sex">
                         <option value="no option selected">Select your Gender</option>
                         <option value="Female">Female</option>
                         <option value="Male">Male</option>
                         <option value="Other">Prefer not to say</option>
-                      </select>
-            </div>
-            <div class="number">
-                <p>Phone Number</p>
-                <div class="inputfield">
-                    <input type="tel" class="numberinput" name="phone" placeholder="Enter your 10 digit" 
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </select>
+                </div>
+                <div class="inputSection">
+                    <p>Phone Number</p>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your 10 digit" autocomplete="tel" required>
                 </div>
             </div>
-        </div>
-        <div class="healthHistory">
-            <p>Check the conditions that apply to you or any member of your immediate relatives:</p>
-            <div class="conditions">
-                <label class="container">Asthma
-                    <span class="checkmark"></span>
-                    <input type="checkbox" checked="checked">
-                    
-                  </label>
-                  
-                  <label class="container">Cancer
-                    <span class="checkmark"></span>
-                    <input type="checkbox">
-                  </label>
-                  
-                  <label class="container">Diabetes
-                    <span class="checkmark"></span>
-                    <input type="checkbox">
-                  </label>
-                  
-                  <label class="container">Hypertension
-                    <span class="checkmark"></span>
-                    <input type="checkbox">
-                  </label>
-
-                  <label class="container">Cardic disease
-                    <span class="checkmark"></span>
-                    <input type="checkbox">
-                  </label>
-
-                  <label class="container">Psychiatric disorder
-                    <span class="checkmark"></span>
-                    <input type="checkbox">
-                  </label>
-
-                  <label class="container">Other
-                    <span class="checkmark"></span>
-                    <input type="checkbox">
-                  </label>
+            <div class="">
+                <p>Check the conditions that apply to you or any member of your immediate relatives:</p>
+                <div class="checkboxContainer">
+                        <label><input type="checkbox" id="disease1" checked="checked"> Asthma</label>
+                        <label><input type="checkbox" id="disease2">Cancer </label>
+                        <label><input type="checkbox" id="disease3">Diabetes</label>
+                        <label><input type="checkbox" id="disease4">Hypertension</label>
+                        <label><input type="checkbox" id="disease5">Cardic disease </label>
+                        <label><input type="checkbox" id="disease6">Psychiatric disorder</label>
+                        <label><input type="checkbox" id="disease7">Other</label>
+                </div>
             </div>
-        </div>
-        <div class="currentHealth">
-            <p>Are you currently taking any medication?</p>
-            <div class="conditions">
-                <label class="container">Yes
-                    <span class="checkmark"></span>
-                    <input type="radio">
-                </label>
-                <label class="container">No
-                    <span class="checkmark"></span>
-                    <input type="radio">
-                </label>
+            <div class="currentHealth">
+                <p>Are you currently taking any medication?</p>
+                <div class="conditions">
+                    <label>
+                        <span class="checkmark"></span>
+                        <input type="radio" id="circle1">
+                        Yes
+                    </label>
+                    <label>
+                        <span class="checkmark"></span>
+                        <input type="radio" id="circle2">
+                        No
+                    </label>
+                </div>
+                <div class="describe">
+                    <input type="text" id="paragraph1">
+                </div>
             </div>
-            <div class="describe">
-                <input class="write" type="text">
+            <div class="alcoholHealth">
+                <p>How often do you consume alcohol?</p>
+                <div class="conditions">
+                    <label>
+                        <span class="checkmark"></span>
+                        <input type="radio" id="circle3">
+                        Daily
+                    </label>
+                    <label>
+                        <span class="checkmark"></span>
+                        <input type="radio" id="circle4">
+                        Weekly
+                    </label>
+                    <label>
+                        <span class="checkmark"></span>
+                        <input type="radio" id="circle5">
+                        Monthly
+                    </label>
+                    <label>
+                        <span class="checkmark"></span>
+                        <input type="radio" id="circle6">
+                        Never
+                    </label>
+                </div>
+                <div class="describe">
+                    <input type="text" id="paragraph2">
+                </div>
             </div>
-        </div>
-        <div class="alcoholHealth">
-            <p>How often do you consume alcohol?</p>
-            <div class="conditions">
-                <label class="container">Daily
-                    <span class="checkmark"></span>
-                    <input type="radio">
-                </label>
-                <label class="container">Weekly
-                    <span class="checkmark"></span>
-                    <input type="radio">
-                </label>
-                <label class="container">Monthly
-                    <span class="checkmark"></span>
-                    <input type="radio">
-                </label>
-                <label class="container">Never
-                    <span class="checkmark"></span>
-                    <input type="radio">
-                </label>
-            </div>
-            <div class="describe">
-                <input class="write" type="text">
+            <div class="submitSection">
+                <button class="Submitbutton">Submit</button>
             </div>
         </div>
     </div>
-    <div class="submitSection">
-        <button class="Submitbutton">Submit</button>
-    </div>
-    </div>
+</form>
+
 </body>
 
 </html>
